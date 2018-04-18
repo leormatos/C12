@@ -1,0 +1,40 @@
+@import "/_mixins"
+@import "/_components"
+@import "/assets/fonts/_index"
+
+html
+	background: $color-black
+
+body
+	font-size: 16px
+	box-sizing: border-box
+	font-family: $font-sans
+	font-size: $font-size
+	line-height: $line-height
+	font-weight: 300
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-smooth: antialised
+	font-smoothing: antialised
+	text-rendering: optimizeLegibility
+	color: $color-white
+	background-color: $color-black
+	font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 1, "onum" 0, "lnum" 1, "dlig" 1, "zero" 1
+	hyphens: auto
+	font-size: 0.875rem
+	line-height: 1.5rem
+	+above(md)
+		font-size: 1.125rem
+		line-height: 2rem
+
+::selection
+	background: alpha($color-black, 0.66)
+	color: $color-body
+
+strong
+	font-weight: 500
+
+main
+	margin-top: 4rem
+	margin-bottom: 4rem

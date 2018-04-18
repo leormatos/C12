@@ -1,0 +1,17 @@
+{
+  "name": "dhd-medialab",
+  "version": "1.0.0",
+  "description": "design human design for fac medialab",
+  "homepage": "https://dhd.netlify.com",
+  "scripts": {
+    "dev": "harp-scripts watch",
+    "compile": "harp-scripts compile",
+  },
+  "author": "Vitor Dino <vitor@kunstdesign.com.br>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "harp": "^0.24.0",
+    "harp-scripts": "^0.1.2"
+  },
+}

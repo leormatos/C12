@@ -1,0 +1,18 @@
+var artefatos = [
+	'an object',
+	'an interaction',
+	'a website',
+	'a service',
+	'an image',
+	'an app',
+	'an experience',
+	'an installation',
+	'a technology',
+	'a brand',
+	'a concept',
+	'a book',
+	'a bottle',
+	'a building',
+	'a vehicle',
+	'a boat',
+]
