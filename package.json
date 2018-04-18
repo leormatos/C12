@@ -13,5 +13,5 @@
   "dependencies": {
     "harp": "^0.24.0",
     "harp-scripts": "^0.1.2"
-  },
+  }
 }
