@@ -5,7 +5,7 @@
   "homepage": "https://dhd.netlify.com",
   "scripts": {
     "dev": "harp-scripts watch",
-    "compile": "harp-scripts compile",
+    "compile": "harp-scripts compile"
   },
   "author": "Vitor Dino <vitor@kunstdesign.com.br>",
   "license": "UNLICENSED",
