@@ -1,7 +1,7 @@
 mixin Randomizer({id, label, collection})
-	div(id=id)
-		span.title=`${label}: `
-		span.response [---]
+	.Randomizer(id=id)
+		div.title=`${label}: `
+		div.response &nbsp;
 
 	script.
 		document.getElementById('#{id}').addEventListener('click', () => setContent('#{id}', #{collection}))
