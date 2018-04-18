@@ -1,5 +1,7 @@
 doctype
 
+include _components/index
+
 html
 	head
 		meta(charset='utf-8')
@@ -8,6 +10,8 @@ html
 		link(href='/main.css', rel='stylesheet')
 
 	body
-		!= yield
+		+Navbar()
+		main.container
+			!= yield
 		script(src='data.js')
 		script(src='main.js')

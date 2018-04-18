@@ -1,4 +1,4 @@
-var artefatos = [
+var desenvolva = [
 	'um objeto',
 	'uma interação',
 	'um site',
