@@ -4,4 +4,6 @@ mixin Randomizer({id, label, collection})
 		div.response &nbsp;
 
 	script.
-		document.getElementById('#{id}').addEventListener('click', () => setContent('#{id}', #{collection}))
+		document.getElementById('#{id}').addEventListener('click', function () {
+			return setContent('#{id}', #{collection});
+		});
