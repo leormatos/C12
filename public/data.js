@@ -76,6 +76,7 @@ var utilizando = [
 	'caneta e papel',
 	'pintura',
 	'colagem',
+	'papel paraná',
 	'vídeo',
 	'programação',
 	'post-its',
