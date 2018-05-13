@@ -2,8 +2,10 @@
 @import "/_components"
 @import "/assets/fonts/_index"
 
-html
-	background: $color-black
+@media only screen
+	body, html
+		color: $color-white
+		background-color: $color-black
 
 body
 	font-size: 16px
@@ -18,8 +20,6 @@ body
 	font-smooth: antialised
 	font-smoothing: antialised
 	text-rendering: optimizeLegibility
-	color: $color-white
-	background-color: $color-black
 	font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 1, "onum" 0, "lnum" 1, "dlig" 1, "zero" 1
 	hyphens: auto
 	font-size: 1.25rem

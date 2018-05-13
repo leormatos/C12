@@ -1,0 +1,6 @@
+mixin Line({title, options})
+	-const string = JSON.stringify(options).replace(/"/g, "'")
+	-const test = JSON.parse(string.replace(/'/g, '"'))
+	.Line(data-options=string)&attributes(attributes)
+		div.title=`${title}: `
+		div.response &nbsp;

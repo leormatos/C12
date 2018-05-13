@@ -1,1 +1,108 @@
-{}
+{
+	"globals": {
+		"lines": [
+			{
+				"title": "Desenvolva",
+				"options": [
+					"um objeto",
+					"uma interação",
+					"um site",
+					"um serviço",
+					"uma imagem",
+					"um app",
+					"uma experiência",
+					"uma instalação",
+					"uma tecnologia",
+					"uma marca",
+					"um conceito",
+					"um livro",
+					"uma garrafa",
+					"uma construção",
+					"um veículo"
+				]
+			},
+			{
+				"title": "Inspirado por",
+				"options": [
+					"geometria",
+					"memes",
+					"pontos, linhas e traços",
+					"fundo do mar",
+					"espaço sideral",
+					"grafite e pixação",
+					"cerrado",
+					"Oscar Niemeyer",
+					"espaço sideral",
+					"tráfego",
+					"fotografia",
+					"moda",
+					"sonhos",
+					"migração",
+					"humor",
+					"realidade virtual"
+				]
+			},
+			{
+				"title": "Que seja",
+				"options": [
+					"mecânico",
+					"caótico",
+					"empático",
+					"minimalista",
+					"funcional",
+					"colaborativo",
+					"imersivo",
+					"disruptivo",
+					"contrastante",
+					"responsivo",
+					"contrastante",
+					"nonsense",
+					"emotivo",
+					"fluido",
+					"afetuoso"
+				]
+			},
+			{
+				"title": "Por meio de",
+				"options": [
+					"formas",
+					"narrativas",
+					"padrões",
+					"wireframes",
+					"texturas",
+					"materials",
+					"pulso",
+					"hardware",
+					"silhuetas",
+					"personas",
+					"botões",
+					"layouts",
+					"enxames",
+					"telas",
+					"escrita"
+				]
+			},
+			{
+				"title": "Utilizando",
+				"options": [
+					"tecido",
+					"caneta e papel",
+					"pintura",
+					"colagem",
+					"papel paraná",
+					"vídeo",
+					"programação",
+					"post-its",
+					"limpador de cahimbo",
+					"palito de picolé",
+					"isopor",
+					"Excel",
+					"cabos e arames",
+					"som",
+					"Photoshop",
+					"cola quente"
+				]
+			}
+		]
+	}
+}

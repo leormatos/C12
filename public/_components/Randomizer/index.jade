@@ -1,9 +1,0 @@
-mixin Randomizer({id, label, collection})
-	.Randomizer.appear-css(id=id)
-		div.title=`${label}: `
-		div.response &nbsp;
-
-	script.
-		document.getElementById('#{id}').addEventListener('click', function () {
-			return setContent('#{id}', #{collection});
-		});

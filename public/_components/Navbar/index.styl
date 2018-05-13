@@ -7,6 +7,8 @@
 	padding-top: 1rem
 	padding-bottom: 1rem
 	line-height: 1rem
+	& > .container
+		display: flex
 	&-title
 		color: currentColor
 		font-size: 0.875rem
@@ -14,3 +16,17 @@
 	&-triangle
 		font-size: 0.875rem
 		font-weight: 900
+		flex 1
+	&-state
+		display: none
+		color: $color-black
+		text-decoration: none
+		align-self: flex-end
+		font-family: 'SF Mono', monospace
+		font-size: 0.5rem
+		padding: 3px 5px
+		line-height: 1
+		background: #ddd
+		border-radius: 2px
+		&[href]
+			display block
