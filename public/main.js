@@ -1,3 +1,4 @@
+const $ = str => document.querySelector(str)
 const $$ = str => document.querySelectorAll(str)
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 const pickRandom = arr => Math.floor(Math.random() * arr.length)
@@ -5,13 +6,22 @@ const readable = 'abcdefghijkmnpqrstuvwxyzACEFHJKLMNPRTUVWXY3479'
 const hashids = new Hashids('', 0, readable)
 const store = {
 	DOM: document.querySelector('.Navbar-state'),
-	getState : () => {
-		return hashids.decode(window.location.hash.replace(/^#/, '')) || []
+	getState: () => {
+		const state = window.location.hash.replace(/^#/, '')
+		if(state){
+			$('title').innerHTML = `△ - #${state}`
+			store.DOM.href = `/#${state}`
+			store.DOM.innerHTML = `#${state}`
+		}
+		return hashids.decode(state) || []
 	},
-	setState : elements => {
+	setState: elements => {
 		const state = hashids.encode(elements.map($el => +$el.dataset.index))
-		store.DOM.href = `/#${state}`
-		store.DOM.innerHTML = state
+		const hash = `#${state}`
+		store.DOM.href = `/${hash}`
+		store.DOM.innerHTML = hash
+		if(window.location.hash === hash) return
+		history.replaceState({}, '', store.DOM.href)
 	},
 }
 
@@ -36,7 +46,7 @@ const handleClick = event => {
 	while(!event.path[index].dataset.options)
 		if(!event.path[++index]) return
 	change(event.path[index])
-	store.setState(elements)
+	store.setState([...$$('.Line[data-options]')])
 }
 
 const bindClick = elements => elements.forEach($el => (
